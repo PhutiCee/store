@@ -37,10 +37,6 @@ export default function Main() {
     return (
         <div>
             <Navbar user={username} />
-            <div>
-                <Link to={"signin"}>Signin</Link>
-                <Link to={"addproduct"}>Add</Link>
-            </div>
             <Products />
         </div>
     );

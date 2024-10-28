@@ -21,11 +21,11 @@ export default function Products() {
 
                         return (
                             <div key={product.ProductID} className="flex flex-col w-full max-w-xs mx-auto overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md sm:m-4">
-                                <Link className="mx-3 mt-3 h-60 overflow-hidden rounded-xl" to="#">
+                                <Link className="mt-3 h-60 overflow-hidden rounded-xl" to={`/product/${product.ProductID}`}>
                                     <img className="w-full h-full object-cover" src={product.ProductImg} alt={product.ProductName} />
                                 </Link>
                                 <div className="px-5 pb-5 mt-4">
-                                    <Link to="#">
+                                    <Link to={`/product/${product.ProductID}`}>
                                         <h5 className="text-xl tracking-tight text-slate-900">{product.ProductName}</h5>
                                     </Link>
                                     <div className="flex items-center justify-between mt-2 mb-5">
