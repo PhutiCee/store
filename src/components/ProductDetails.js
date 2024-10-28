@@ -9,7 +9,7 @@ import { CgShoppingCart } from 'react-icons/cg';
 const ProductDetails = () => {
     const { productId } = useParams();
     const { products } = useContext(ProductsContext);
-    const { addToCart, shoppingCart, dispatch } = useContext(CartContext);
+    const { shoppingCart, dispatch } = useContext(CartContext);
     const [quantity, setQuantity] = useState(1);
 
     const product = products.find((item) => item.ProductID === productId);

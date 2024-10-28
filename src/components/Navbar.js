@@ -14,6 +14,8 @@ export default function Navbar({ user }) {
             console.error("Logout Error:", error);
         }
     };
+    console.log(user);
+
 
     return (
         <header className="text-gray-600 bg-white shadow-md">
